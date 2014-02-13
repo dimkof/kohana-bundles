@@ -1,13 +1,13 @@
 <?php defined('SYSPATH') OR die('No direct script access.');
 
-if ( ! defined('BUNDPATH'))
+if ( ! defined('BUNDLEPATH'))
 {
 	$bundles = '../bundles';
 
 	if ( ! is_dir($bundles) AND is_dir(DOCROOT.$bundles))
 		$bundles = DOCROOT.$bundles;
 
-	define('BUNDPATH', realpath($bundles).DIRECTORY_SEPARATOR);
+	define('BUNDLEPATH', realpath($bundles).DIRECTORY_SEPARATOR);
 
 	unset($bundles);
 }
